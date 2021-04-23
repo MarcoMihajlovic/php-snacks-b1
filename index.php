@@ -14,9 +14,24 @@
     <?php
 
         $matches = array(
-            array("Looney Tunes", "Monstars", "78", "77"),
-            array("Atomic Superman", "Cascade Jaguars", "65", "52"),
-            array("Basin City Blues", "Charlotte Banshees", "99", "92"),
+            array(
+                "Squadra di casa" => "Looney Tunes", 
+                "Squadra ospite"=>"Monstars", 
+                "Punteggio casa"=>"78", 
+                "Punteggio ospite"=>"77"
+            ),
+            array(
+                "Squadra di casa" => "Atomic Superman", 
+                "Squadra ospite" => "Cascade Jaguars", 
+                "Punteggio casa" => "65", 
+                "Punteggio ospite" => "52"
+            ),
+            array(
+                "Squadra di casa" => "Basin City Blues", 
+                "Squadra ospite" => "Charlotte Banshees", 
+                "Punteggio casa" => "99", 
+                "Punteggio ospite" => "92"
+            ),
         );
 
     ?>
@@ -28,7 +43,7 @@
             $number = 0;
             $number = $i + 1;
             echo "<h2>Match $number</h2>";
-            echo "<p><strong>".$matches[$i][0]." - ".$matches[$i][1]." | ".$matches[$i][2]." - ".$matches[$i][3]."</strong></p>";
+            echo "<p><strong>".$matches[$i]["Squadra di casa"]." - ".$matches[$i]["Squadra ospite"]." | ".$matches[$i]["Punteggio casa"]." - ".$matches[$i]["Punteggio ospite"]."</strong></p>";
         }
     ?>
 
