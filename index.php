@@ -15,22 +15,22 @@
 
         $matches = array(
             array(
-                "Squadra di casa" => "Looney Tunes", 
-                "Squadra ospite"=>"Monstars", 
-                "Punteggio casa"=>"78", 
-                "Punteggio ospite"=>"77"
+                "squadra_di_casa" => "Looney Tunes", 
+                "squadra_ospite"=>"Monstars", 
+                "punteggio_casa"=>"78", 
+                "punteggio_ospite"=>"77"
             ),
             array(
-                "Squadra di casa" => "Atomic Superman", 
-                "Squadra ospite" => "Cascade Jaguars", 
-                "Punteggio casa" => "65", 
-                "Punteggio ospite" => "52"
+                "squadra_di_casa" => "Atomic Superman", 
+                "squadra_ospite" => "Cascade Jaguars", 
+                "punteggio_casa" => "65", 
+                "punteggio_ospite" => "52"
             ),
             array(
-                "Squadra di casa" => "Basin City Blues", 
-                "Squadra ospite" => "Charlotte Banshees", 
-                "Punteggio casa" => "99", 
-                "Punteggio ospite" => "92"
+                "squadra_di_casa" => "Basin City Blues", 
+                "squadra_ospite" => "Charlotte Banshees", 
+                "punteggio_casa" => "99", 
+                "punteggio_ospite" => "92"
             ),
         );
 
@@ -43,7 +43,7 @@
             $number = 0;
             $number = $i + 1;
             echo "<h2>Match $number</h2>";
-            echo "<p><strong>".$matches[$i]["Squadra di casa"]." - ".$matches[$i]["Squadra ospite"]." | ".$matches[$i]["Punteggio casa"]." - ".$matches[$i]["Punteggio ospite"]."</strong></p>";
+            echo "<p><strong>".$matches[$i]["squadra_di_casa"]." - ".$matches[$i]["squadra_ospite"]." | ".$matches[$i]["punteggio_casa"]." - ".$matches[$i]["punteggio_ospite"]."</strong></p>";
         }
     ?>
 
